@@ -7,6 +7,7 @@ export default function App() {
   const [altura, setAltura] = useState('');
 
   function handleSubmit() {
+    
     const alt = (altura / 100);
     const imc = peso / (alt * alt);
 
@@ -29,7 +30,7 @@ export default function App() {
       alert("Você está acima do peso! Obesidade grau 3! "+imc.toFixed(2));
     }
     else {
-      alert("Valor não reconhecido, tente novamente!")
+      alert("Valor não reconhecido, tente novamente!");
     }
 
 
@@ -39,7 +40,7 @@ export default function App() {
 
     <View style={styles.container}>
 
-      <Text style={styles.title}>Calcule seu IMC</Text>
+      <Text style={styles.title}> Calcule seu IMC </Text>
 
       <TextInput 
       style = {styles.input}
